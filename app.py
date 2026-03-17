@@ -89,7 +89,7 @@ if prompt := st.chat_input("Digite sua dúvida sobre exames laboratoriais..."):
                     contents=historico,
                     config=types.GenerateContentConfig(
                         system_instruction=SYSTEM_PROMPT,
-                        max_output_tokens=500,
+                        max_output_tokens=1500,
                     )
                 )
                 resposta = response.text
